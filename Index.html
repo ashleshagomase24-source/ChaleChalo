@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/responsive.css">
+
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">ChaloChale</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destination.html">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="packages.html">Packages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Booking.html">Booking</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                </ul>
+                <div class="d-lg-flex gap-2 ms-lg-3">
+                    <a href="signup.html" class="btn btn-warning btn-sm">Signup</a>
+                    <a href="Login.html" class="btn btn-warning btn-sm">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-0">
+
+    <!---Carourlse Start-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Images/Nature.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="fw-bold">Explore Beautiful Nature</h5>
+                        <p>Plan your next vacation with ChaleChalo</p>
+                        <button class="btn btn-primary">Explore Now</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Images/Mountain.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="fw-bold">Advanture in mountain</h5>
+                        <p>Discover Tracking and hiking Packages</p>
+                        <button class="btn btn-success">View Packages</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Images/Light.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="fw-bold">Enjoy City Tools</h5>
+                        <p>Book Affortable city travel plan</p>
+                        <button class="btn btn-warning">Book Now</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </div>
+    <!--Carousle End-->
+
+    <!--Service Section Start -->
+    <div class="row">
+        <div class="col-md-12">
+            <!--Service Section--->
+            <section class="py-5 bg-light">
+                <div class="container">
+                    <h2 class="text-center fw-bold md-4">Why Choose Chale Chalo</h2>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <h4 class="fw-bold">Easy Booking</h4>
+                                <p>Book travel packages quickly with our simple booking system</p>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <h4 class="fw-bold">Best Hotels</h4>
+                                <p>We provide the best hotels and resorts for your comfortable stay and affortable</p>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <h4 class="fw-bold">24/7 Support</h4>
+                                <p>Our team is always ready to assist you with any queries or concerns</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+
+    </div>
+
+    <!--Service section End -->
+
+    <!---Card section-->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold md-4 py-3">Popular Destination</h2>
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-lg border-0 rounded-4 overflow-hidden" style="transition: transform 0.3s ease;">
+                        <img src="Images/Agra.jpg" class="card-img-top" alt="Agra" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Agra</h5>
+                            <p class="card-text text-muted">Explore the beauty of the Taj Mahal and enjoy the rich flavors</p>
+                            <a href="#" class="btn btn-warning mt-auto w-100 fw-bold">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-lg border-0 rounded-4 overflow-hidden" style="transition: transform 0.3s ease;">
+                        <img src="Images/Jaipur.jpg" class="card-img-top" alt="Jaipur" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Jaipur</h5>
+                            <p class="card-text text-muted">Experience the royal charm of Jaipur</p>
+                            <a href="#" class="btn btn-warning mt-auto w-100 fw-bold">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-lg border-0 rounded-4 overflow-hidden" style="transition: transform 0.3s ease;">
+                        <img src="Images/Goa.jpg" class="card-img-top" alt="Goa" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Goa</h5>
+                            <p class="card-text text-muted">Enjoy Goa's beautiful beaches and vibrant culture</p>
+                            <a href="#" class="btn btn-warning mt-auto w-100 fw-bold">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="py-5 bg-light">
+
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4">Featured Travel Packages</h2>
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-lg border-0 rounded-4 overflow-hidden" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <div class="card-body d-flex flex-column text-white">
+                            <span class="badge bg-warning text-dark mb-2" style="width: fit-content; font-weight: bold;">BEST SELLER</span>
+                            <h5 class="card-title fw-bold">Goa Beach Package</h5>
+                            <p class="card-text" style="font-size: 14px; opacity: 0.9;">Duration 5 Days/4 Nights</p>
+                            <p class="fw-bold" style="font-size: 20px;">Rs 15,999</p>
+                            <a href="#" class="btn btn-warning mt-auto w-100 fw-bold">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-lg border-0 rounded-4 overflow-hidden" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <div class="card-body d-flex flex-column text-white">
+                            <span class="badge bg-warning text-dark mb-2" style="width: fit-content; font-weight: bold;">ADVENTURE</span>
+                            <h5 class="card-title fw-bold">Manali Adventure Package</h5>
+                            <p class="card-text" style="font-size: 14px; opacity: 0.9;">Duration 6 Days/5 Nights</p>
+                            <p class="fw-bold" style="font-size: 20px;">Rs 18,999</p>
+                            <a href="#" class="btn btn-warning mt-auto w-100 fw-bold">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-lg border-0 rounded-4 overflow-hidden" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <div class="card-body d-flex flex-column text-white">
+                            <span class="badge bg-warning text-dark mb-2" style="width: fit-content; font-weight: bold;">BUDGET</span>
+                            <h5 class="card-title fw-bold">Kerla BackWater Package</h5>
+                            <p class="card-text" style="font-size: 14px; opacity: 0.9;">Duration 4 Days/3 Nights</p>
+                            <p class="fw-bold" style="font-size: 20px;">Rs 12,999</p>
+                            <a href="#" class="btn btn-warning mt-auto w-100 fw-bold">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!--Card section end-->
+
+      <!--Start Footer Section-->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-12 col-md-4">
+                    <h5 class="fw-bold mb-3">About ChaloChale</h5>
+                    <p class="small">Your trusted travel partner for unforgettable adventures across India's most beautiful destinations.</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="index.html" class="text-decoration-none text-white-50">Home</a></li>
+                        <li><a href="destination.html" class="text-decoration-none text-white-50">Destinations</a></li>
+                        <li><a href="packages.html" class="text-decoration-none text-white-50">Packages</a></li>
+                        <li><a href="Booking.html" class="text-decoration-none text-white-50">Booking</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h5 class="fw-bold mb-3">Contact Info</h5>
+                    <p class="small mb-2">📧 Email: info@chalechalo.com</p>
+                    <p class="small mb-2">📱 Phone: +91-XXX-XXXXXX</p>
+                    <p class="small">📍 Address: India</p>
+                </div>
+            </div>
+            <hr class="bg-secondary opacity-25">
+            <div class="text-center">
+                <p class="small mb-0">&copy; 2026 ChaloChale Travel App. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!--End footer section-->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

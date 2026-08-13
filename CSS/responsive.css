@@ -1,0 +1,510 @@
+/* ========================================
+   RESPONSIVE CSS - ChaleChalo Website
+   ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* ========================================
+   NAVBAR RESPONSIVE
+   ======================================== */
+.navbar {
+    padding: 1rem 0 !important;
+}
+
+.navbar-brand {
+    font-size: clamp(1.2rem, 5vw, 1.8rem) !important;
+}
+
+.navbar-toggler {
+    padding: 0.25rem 0.5rem;
+}
+
+.navbar-nav {
+    gap: 0.5rem;
+}
+
+.navbar-nav .nav-link {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    padding: 0.5rem 0.75rem !important;
+}
+
+/* Mobile: Stack buttons vertically */
+@media (max-width: 991px) {
+    .navbar-nav {
+        margin-top: 1rem;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 0.75rem 0 !important;
+    }
+    
+    .btn.btn-warning {
+        display: block;
+        width: 100%;
+        margin-top: 0.5rem !important;
+        margin-left: 0 !important;
+        font-size: 0.9rem;
+    }
+}
+
+/* ========================================
+   CAROUSEL RESPONSIVE
+   ======================================== */
+.carousel {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-inner {
+    width: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.carousel-caption h2 {
+    font-size: clamp(1.2rem, 5vw, 2.5rem);
+    margin-bottom: 0.5rem;
+}
+
+.carousel-caption p {
+    font-size: clamp(0.9rem, 3vw, 1.2rem);
+    margin-bottom: 0.5rem;
+}
+
+.carousel-caption button {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    padding: 0.4rem 1rem;
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        max-height: 400px;
+    }
+    
+    .carousel-caption {
+        padding: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-item img {
+        max-height: 250px;
+    }
+    
+    .carousel-caption {
+        padding: 0.5rem;
+        bottom: 0;
+    }
+}
+
+/* ========================================
+   SECTION PADDING & SPACING
+   ======================================== */
+section {
+    width: 100%;
+    padding: clamp(2rem, 5vw, 5rem) 0;
+}
+
+.container {
+    width: 100% !important;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: clamp(1.5rem, 4vw, 3rem) 0;
+    }
+    
+    .container {
+        padding: 0 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 1rem 0;
+    }
+    
+    .container {
+        padding: 0 0.5rem;
+    }
+}
+
+/* ========================================
+   HEADING RESPONSIVE
+   ======================================== */
+h1 {
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: clamp(1.3rem, 5vw, 2.2rem);
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: clamp(1.1rem, 4vw, 1.8rem);
+}
+
+h4 {
+    font-size: clamp(1rem, 3vw, 1.4rem);
+}
+
+h5 {
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+}
+
+/* ========================================
+   CARDS RESPONSIVE
+   ======================================== */
+.card {
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: clamp(1rem, 2vw, 1.5rem);
+}
+
+.card-title {
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+}
+
+.card-text {
+    font-size: clamp(0.85rem, 2vw, 1rem);
+    line-height: 1.5;
+}
+
+/* Destination cards */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-img-top {
+        height: 150px;
+    }
+    
+    .card-body {
+        padding: 0.75rem;
+    }
+}
+
+/* ========================================
+   BUTTONS RESPONSIVE
+   ======================================== */
+.btn {
+    font-size: clamp(0.85rem, 2vw, 1rem);
+    padding: clamp(0.35rem, 1.5vw, 0.6rem) clamp(0.75rem, 2vw, 1.2rem);
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary, .btn-warning, .btn-success {
+    font-weight: 600;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn-block, .w-100 {
+    width: 100% !important;
+}
+
+@media (max-width: 480px) {
+    .btn {
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* ========================================
+   ROW & COLUMN RESPONSIVE
+   ======================================== */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+}
+
+[class*="col-"] {
+    flex: 0 0 auto;
+    width: 100%;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+/* Bootstrap breakpoints */
+@media (min-width: 576px) {
+    .col-sm-6 {
+        width: 50%;
+    }
+    
+    .col-sm-12 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md-4 {
+        width: 33.333%;
+    }
+    
+    .col-md-6 {
+        width: 50%;
+    }
+    
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-3 {
+        width: 25%;
+    }
+    
+    .col-lg-4 {
+        width: 33.333%;
+    }
+}
+
+/* ========================================
+   TEXT RESPONSIVE
+   ======================================== */
+p {
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* ========================================
+   FORMS RESPONSIVE
+   ======================================== */
+.form-control {
+    width: 100%;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    padding: clamp(0.4rem, 1.5vw, 0.6rem) 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+}
+
+.form-label {
+    font-size: clamp(0.85rem, 2vw, 1rem);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 480px) {
+    .form-control {
+        margin-bottom: 0.75rem;
+    }
+}
+
+/* ========================================
+   FOOTER RESPONSIVE
+   ======================================== */
+footer, .footer-section {
+    width: 100%;
+    padding: clamp(2rem, 4vw, 3rem) 0;
+}
+
+footer h2, .footer-section h2 {
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
+    margin-bottom: 1rem;
+}
+
+footer p, .footer-section p {
+    font-size: clamp(0.85rem, 2vw, 1rem);
+    line-height: 1.5;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer ul li a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    footer, .footer-section {
+        padding: 1.5rem 0;
+    }
+}
+
+/* ========================================
+   SERVICE SECTION RESPONSIVE
+   ======================================== */
+.service-item {
+    padding: 1rem;
+    text-align: center;
+}
+
+.service-item h4 {
+    margin-bottom: 0.75rem;
+}
+
+/* ========================================
+   IMAGES RESPONSIVE
+   ======================================== */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ========================================
+   UTILITY CLASSES RESPONSIVE
+   ======================================== */
+.text-center {
+    text-align: center;
+}
+
+.mt-auto {
+    margin-top: auto;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+/* ========================================
+   OVERFLOW & SCROLLING FIX
+   ======================================== */
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* ========================================
+   MOBILE-FIRST APPROACH (Extra small devices)
+   ======================================== */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    section {
+        margin: 0;
+    }
+    
+    .m-3 {
+        margin: 0.5rem !important;
+    }
+    
+    .g-4 {
+        gap: 1rem !important;
+    }
+    
+    /* Ensure no horizontal scroll */
+    * {
+        max-width: 100%;
+    }
+}
+
+/* ========================================
+   TABLET DEVICES (Small to Medium)
+   ======================================== */
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+    
+    section {
+        padding: 2rem 0;
+    }
+}
+
+/* ========================================
+   DESKTOP DEVICES (Large and above)
+   ======================================== */
+@media (min-width: 769px) {
+    body {
+        font-size: 16px;
+    }
+    
+    .container {
+        max-width: 1200px;
+    }
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+@media print {
+    .navbar, .carousel-control-prev, .carousel-control-next {
+        display: none;
+    }
+    
+    body {
+        font-size: 12pt;
+    }
+}
